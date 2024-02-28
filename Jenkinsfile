@@ -32,17 +32,7 @@ node {
    }
    
    stage('Almost Done!') {
-      def response = input message: 'Whatcha think?', parameters: [choice(choices: 'Yes\nNo', description: 'Proceed or Abort?', name: 'Wasn\'t that cool?')]
-        
-      if (response=="Yes") {
-         echo "I agree!"
-      } else {
-         echo "You are hard to please."
-      }
-   }
-	
-   stage('Static Code Analysis'){
-       build job: 'static-code-analysis'
+   	echo "yezi ma l3abna"
    }
 	
 
